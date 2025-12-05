@@ -1,5 +1,10 @@
 import warnings
+import os
 warnings.filterwarnings("ignore")
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+os.environ['PYTHONWARNINGS'] = 'ignore'
+import logging
+logging.getLogger('tensorboard').setLevel(logging.ERROR)
 
 import torch
 import torch.nn.functional as F
