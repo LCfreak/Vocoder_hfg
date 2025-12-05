@@ -283,6 +283,7 @@ if __name__ == '__main__':
     parser.add_argument('--resume', action='store_true')
     parser.add_argument('--input_training_file', required=True)
     parser.add_argument('--input_validation_file', required=True)
+    parser.add_argument('--input_wavs_dir', required=True)
     
     args = parser.parse_args()
     
